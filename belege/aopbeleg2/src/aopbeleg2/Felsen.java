@@ -9,7 +9,7 @@ public class Felsen extends Gebaeude {
 
 	@Override
 	public boolean hatBlitzableiter() {
-		return true;
+		return false;
 	}
 
 	@Override
