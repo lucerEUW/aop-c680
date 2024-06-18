@@ -1,15 +1,20 @@
 package aopbeleg2;
 
-public class Felsen extends Gebaeude {
-
+public class Felsen extends Fahrzeug {
+	private boolean istNass;
+	
 	public Felsen(int id, Position position) {
 		super(id, position);
+		this.istNass = false;
 		// TODO Auto-generated constructor stub
 	}
 
-	@Override
-	public boolean hatBlitzableiter() {
-		return false;
+	public void nassWerden() {
+		this.istNass = true;
+	}
+
+	public boolean istNass() {
+		return istNass;
 	}
 
 	@Override
